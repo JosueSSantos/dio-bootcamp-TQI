@@ -1,0 +1,70 @@
+body{
+    background: rgb(252, 249, 249);
+    font-family:  Verdana;
+    max-width: 900px;
+    margin: auto;
+}
+#subtitle, .post_title {
+    color: white;
+}
+.container_title{
+    display: flex;
+    flex-direction: column;
+  
+  
+}
+.img_rick_morty{
+    display: flex;
+    align-items: flex-end;
+}
+.post_title{
+    font-size:16px ;
+    font-style: italic;
+    margin:  0;
+    margin-bottom: 15px;
+}
+.post{
+    background: rgb(2, 255, 23);;
+    padding: 20px ;
+    border: 3px solid black;
+    margin: 10px;
+}
+
+.post_content{
+margin: 0;
+margin-bottom: 15px;
+text-align: justify;
+}
+
+.img_post{
+    margin: 0;
+    margin-bottom: 15px;
+    height: 30%;
+    width: 40%;
+    
+}
+.title_rick{
+    color: rgb(2, 255, 23);
+    font-size: 40px;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: line-through;
+    color: #828382;
+}
+.list{
+    margin: 0;
+    list-style-type: none;
+    padding-left:30px;
+}
+
+.list li a {
+    text-decoration: none;
+
+}
+.img_post_body{
+    margin: 0;
+    margin-bottom: 15px;
+    width: 100%;
+
+}
