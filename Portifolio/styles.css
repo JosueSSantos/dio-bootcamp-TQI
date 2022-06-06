@@ -323,3 +323,11 @@ transform: rotate(0);
     align-items: center;
     background: linear-gradient(90deg,  #286dff, #670cfe)
 }
+
+
+@media only screen and (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}

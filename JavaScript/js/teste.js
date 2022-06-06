@@ -1,5 +1,6 @@
 
 var currentNumberWrapper = document.getElementById('currrentNumber');
+
 var currentNumber = 0 
 function increment(){
     currentNumber = currentNumber +1;
