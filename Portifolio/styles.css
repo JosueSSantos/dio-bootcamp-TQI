@@ -13,7 +13,9 @@ body{
  .header-wrapper{
      height: 100vh;
      width: 100%;
-     background: linear-gradient(-45deg, #5e0878,  #085078, #4ca59b , #1fa194 );
+     /*
+     background: linear-gradient(-45deg, #5e0878,  #e205c5, #4ca59b , #10d6c2 );*/
+     background: linear-gradient(45deg,  #286dff, #670cfe,#fe2b66 ,    #3008df , #28fa70);
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;
@@ -27,10 +29,14 @@ body{
  h1{
      text-transform:  uppercase;
      letter-spacing:  6px;
+     color: #ffffff;
 }
 h2{
     text-transform:  uppercase;
     letter-spacing:  4px;
+}
+p{
+    
 }
 .social-media{
     margin-top: 1rem;
@@ -161,7 +167,7 @@ transform: rotate(0);
   list-style-type: none; 
 
 }
-.menu-itens ul li{
+.menu-itens ul li a {
     margin: 10px 0;
     color: #2E1C2b;
     text-decoration: none;
@@ -212,3 +218,108 @@ transform: rotate(0);
     
 }
 
+
+
+
+/* CARDS*/
+
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin:  3rem 0;
+
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+}
+
+.card{
+    height:  300px;
+    width: 400px;
+    margin: 3rem 0 0 0 ;
+    background-image: url('./room.jpg');
+    background-position:center  ;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(0.74);
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.card-text{
+    width: 40%;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    color: rgb(109, 109, 109);
+}
+
+.card-wrapper{
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.card-wrapper::before{
+    
+    content: '';
+    position:absolute;
+    height: 100px;
+    width: 100px;
+    display: block;
+    border: 1px solid #ffffff;
+    opacity: 0;
+    transition: 0.3s;
+
+}
+.card-wrapper h2{
+    font-size:48px ;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 0;
+    transition:  0.3s;
+
+}
+
+.card-wrapper p{
+    font-size:  0;
+    visibility: hidden;
+    opacity: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.3s;
+    
+}
+
+.card:hover{
+    filter: unset;
+}
+.card:hover > .card-wrapper::before{
+    opacity: 1;
+    width: 350px;
+    height: 250px;
+}
+
+
+.footer{
+    height: 60px ;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,  #286dff, #670cfe)
+}
