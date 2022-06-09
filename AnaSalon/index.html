@@ -4,30 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./css/styles.css" >
+    <link rel="stylesheet"  href="./css/styles.css" >
     <title>Document</title>
 </head>
 <body>
     <header class="header-wapper">
+
+    <div class="container-header">
       <div class="text-header">
-        <h1>Beautysalon.</h1>
+        <h1><span class="m-0">Beauty</span><span class="m-1">salon.</span></h1>
       </div>
-        <div class="itens-header">
-            <p>Inicio</p>
-            <p>Sobre</p>
-            <p>Serviços</p>
-            <p>Depoimentos</p>
-            <p>Contato</p>
-        </div>
+      <div class="menu-wrapper">
+        <ul class="menu" >
+            <li ><a href="" class="name">Inicio</a></li>
+            <li ><a href="" class="name">Sobre</a></li>
+            <li ><a href="" class="name">Serviços</a></li>
+            <li ><a href="" class="name">Depoimentos</a></li>
+            <li ><a href="" class="name">Contato</a></li>
+        </ul>
+    </div>
+    </div>
     </header>
     <main>
-        <div class="container">
-            <div class="text-container">
-                <h1 id="text-natural"></h1>
-                <p>text</p>
-                <button class="btn-agendar">Agendar um horário</button>
+        <div class="master">
+        <div class="container-main">
+            <div class="container-main-text">
+                <h1 class="container-main-text-natural">
+                    <p>Saúde natural para sua Beleza</p>
+                </h1>
+                    <span> Aqui o seu conforto e autoestima são prioridades
+                </span>
             </div>
+            <button class="btn-agendar" id="btn-agend" onclick="encaminhar()">Agendar um horário</button>
         </div>
+        <div class="container-image">
+            <div class="container-image-m0">
+                <img src="./assets/salao.jpg" />
+            </div>
+
+        </div>
+    </div>
     </main>
     
 </body>

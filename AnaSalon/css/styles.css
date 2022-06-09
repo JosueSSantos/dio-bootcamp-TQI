@@ -1,12 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
-    color: #ffffff;
+    font-family: 'amatic sc';
+}
+.container-header{
+    background:  linear-gradient(90deg,#f2f7f5 ,#e7ecea, #cfd1d0 );
+    border-bottom: 1px solid #f2f7f5 ;
+}
+.text-header{
+    margin-left: 50px;
+}
+.header-wapper{
+    display: flex;
+    flex-direction: column;
+
+
+
+}
+.menu{
+    list-style-type: none;
+    display: flex; 
+    margin: 0;
+    padding: 0;
+
 
 }
 
-.header-wapper{
+.menu ul{
+      display: flex;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+
+}
+
+.menu li a{
+    display: block;
+    margin: 30px;
+     text-align: center;
+    text-decoration: unset;
+    color: black;
+       transition:  0.5s ease-in-out 0s; 
+       font-size: 18px;
+    
+}
+
+.menu .name:hover, a:hover{
+
+    cursor: pointer;
+   color:#69B99D ;
+   transition:  0.5s ;
+   font-size: 22px;
+   margin-bottom: 0;
+   margin-left: 0;
+
+
+}
+
+ .menu-wrapper{
+ margin-left: auto;
+}
+.container-header{
     display: flex;
+}
+.m-0{
+    color: #69B99D;
+}
+
+/* MAIN */ 
+.master{
+    display: flex;
+    justify-content: center;
     align-items: center;
-          
+    margin: auto;
+    padding: auto;
 }
